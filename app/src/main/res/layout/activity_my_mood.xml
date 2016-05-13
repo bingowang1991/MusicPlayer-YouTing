@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffffff">
+
+     <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" 
+        android:background="#20B2AA"  >
+
+        <ImageButton
+            android:id="@+id/tv_return"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_backround_deep"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/button_back" />
+  
+      <View
+            android:id="@+id/line1_vertical"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/line_vertical"
+            android:layout_toRightOf="@id/tv_return"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            >
+        </View>
+        
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white_translucence"
+            android:layout_centerVertical="true"
+            android:text="个性签名"           
+         />
+        
+        <TextView
+            android:id="@+id/send_mood"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:alpha="0.8"
+            android:background="@drawable/button_backround_deep"
+            android:text="完成"
+            android:textColor="@color/white_translucence"
+            android:textSize="18dp"
+            android:contentDescription="@string/app_name"
+            android:clickable="true"/>
+      
+        <View
+            android:id="@+id/line2_vertical"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/line_vertical"
+            android:layout_toLeftOf="@id/send_mood"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            >
+        </View>   
+    </RelativeLayout>
+    
+
+    
+   <EditText
+           android:id="@+id/mood_edit"
+           android:layout_marginTop="20dp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:gravity="left|top"
+           android:hint="@string/my_mood"       />
+
+
+</LinearLayout>
+

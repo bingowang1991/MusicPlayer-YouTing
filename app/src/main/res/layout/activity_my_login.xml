@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.example.testvolley"
+    android:id="@+id/loginRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+
+ <LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="250dp"
+     android:orientation="vertical"
+     android:background="@mipmap/user_info_bg"
+     >
+   <RelativeLayout
+        android:id="@+id/userinfosetting_top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" 
+        android:background="@mipmap/main_title_bg" >
+
+        <ImageButton
+            android:id="@+id/my_login_return"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_backround_deep"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/button_back"
+            />
+  
+      <View
+            android:id="@+id/line1_vertical"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/line_vertical"
+            android:layout_toRightOf="@id/my_login_return"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            >
+        </View>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="marquee"
+            android:text="用户登录"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white_translucence"
+           />
+
+    </RelativeLayout>
+     
+     <RelativeLayout 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+         > 
+         
+         <com.example.myview.CustomImageView
+        android:id="@+id/iv_face"
+        android:layout_width="100dp"
+        android:layout_height="100dp" 
+        android:layout_centerInParent="true"
+        zhy:src="@drawable/img_avatar_default"
+        zhy:type="circle" 
+        zhy:strokeWidth="3dp"/>    
+
+      </RelativeLayout>  
+      
+   </LinearLayout>
+   
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0px"
+        android:layout_marginRight="15.0px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <RelativeLayout 
+            android:id="@+id/relativelayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0px"
+            android:layout_marginRight="35.0px"
+            android:layout_marginTop="5px"
+            android:paddingTop="21.0px"
+            >
+
+            <ImageView 
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@mipmap/mini_img_mine"
+                
+                />
+            
+            <EditText
+                android:id="@+id/login_edit_account"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"                      
+                android:layout_toRightOf="@id/name"
+                android:layout_alignBottom="@id/name"
+                android:layout_marginLeft="12dp"
+                android:hint="@string/username_hint"            
+                android:saveEnabled="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                 android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                 />
+           
+             <ImageView 
+                android:id="@+id/key"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@mipmap/mini_img_key"
+                android:layout_below="@id/name"
+                android:layout_marginTop="15dp"
+                />
+
+            
+            <EditText
+                android:id="@+id/login_edit_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"                       
+                android:layout_toRightOf="@id/key"
+                android:layout_alignBottom="@id/key"
+                android:layout_marginLeft="12dp"         
+                android:saveEnabled="true"
+                android:layout_centerVertical="true"
+                android:hint="@string/password_hint"
+               android:inputType="textPassword"
+               android:singleLine="true"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                />
+          
+           
+            <CheckBox 
+                android:id="@+id/login_cb_savepwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_edit_pwd"
+                android:paddingLeft="40dp"
+                android:paddingRight="0dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/opt_remember"
+                android:textColor="#ff222222"
+                android:textSize="16.0sp"
+                android:checked="true"
+                />
+            
+            <Button
+                android:id="@+id/forget_key"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"           
+                android:background="#00ffffff"
+                android:text="忘记密码？" 
+                android:layout_alignBottom="@id/login_cb_savepwd"
+                android:layout_alignParentRight="true"       
+                android:layout_marginRight="10dp"
+                android:textSize="16.0sp"/>
+             
+            
+            
+        </RelativeLayout>
+        
+            <Button
+                android:id="@+id/login_btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="#20B2AA"
+                android:text="@string/login"
+                android:textSize="20dp" 
+                android:textColor="#ffffff"
+                android:layout_marginLeft="35.0px"
+                android:layout_marginRight="35.0px"/>
+                
+             <Button
+                android:id="@+id/login_btn_zhuce"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"         
+                android:background="@mipmap/register_button_bg"
+                android:text="@string/zhuce" 
+                android:textColor="#20B2AA"
+                android:layout_marginTop="20dp"              
+                android:layout_marginLeft="35.0px"
+                android:layout_marginRight="35.0px"/>
+             
+            </LinearLayout>
+
+    
+       
+    
+       
+       
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

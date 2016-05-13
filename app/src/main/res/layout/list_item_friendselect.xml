@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:zhy="http://schemas.android.com/apk/res/com.example.testvolley"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:gravity="center_vertical"
+    android:padding="8dp" >
+
+    
+   <com.example.myview.CustomImageView
+          android:id="@+id/iv_pic"
+          android:layout_width="50dp"
+          android:layout_height="50dp" 
+          zhy:src="@drawable/default_face"
+          zhy:type="circle"  />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_toRightOf="@id/iv_pic"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="好友名称"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    
+        <ImageView
+        android:id="@+id/iv_selected"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:src="@mipmap/list_icn_checkbox_ok"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
+

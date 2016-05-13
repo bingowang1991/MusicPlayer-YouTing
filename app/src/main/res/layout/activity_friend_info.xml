@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:zhy="http://schemas.android.com/apk/res/com.example.testvolley"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="0dip"
+    android:layout_marginRight="0dip"
+    
+    >
+ <LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="290dp"
+     android:orientation="vertical"
+     android:background="@mipmap/tree_bg"
+     >
+   <RelativeLayout
+        android:id="@+id/userinfosetting_top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" 
+         >
+
+        <ImageButton
+            android:id="@+id/tv_return_friendinfo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_backround_deep"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/button_back" />
+  
+      <View
+            android:id="@+id/line1_vertical"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/line_vertical"
+            android:layout_toRightOf="@id/tv_return_friendinfo"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            >
+        </View>
+        <TextView
+            android:id="@+id/title"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:layout_toRightOf="@id/line1_vertical"
+            android:layout_marginLeft="6dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white_translucence"
+            android:layout_centerVertical="true"
+            android:text="详细资料"     
+           />
+         <ImageButton
+            android:id="@+id/tv_operate_more"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:alpha="0.8"
+            android:background="@drawable/button_backround_deep"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/overflow_white" />
+      
+        <View
+            android:id="@+id/line2_vertical"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/line_vertical"
+            android:layout_toLeftOf="@id/tv_operate_more"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            >
+        </View>
+
+
+    </RelativeLayout>
+    
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+      
+    >
+   
+          <com.example.myview.CustomImageView
+        android:id="@+id/iv_face"
+        android:layout_width="85dp"
+        android:layout_height="85dp" 
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="30dp"
+        zhy:src="@drawable/default_face"
+        zhy:type="circle" 
+        zhy:strokeWidth="3dp"/>
+          
+            <Button
+            android:id="@+id/add_as_friend"
+            android:layout_width="110dp"
+            android:layout_height="38dp"           
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"          
+            android:background="@mipmap/add_bg"
+            android:text="加为好友"
+            android:textColor="#FFFFFF"
+            android:src="@mipmap/overflow_white"
+            android:gravity="left|center"
+            android:textSize="14dp" 
+            android:paddingRight="0dp"
+            android:paddingLeft="6dp"/>
+      
+      
+   
+      <TextView
+       android:id="@+id/my_name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="25dp"
+       android:text="Name"
+       android:textColor="#ffffff"
+       android:layout_toRightOf="@id/iv_face"
+       android:layout_marginTop="103dp"
+       android:layout_marginLeft="20dp"
+       android:textStyle="bold"
+       />     
+   
+ 
+   <TextView
+       android:id="@+id/my_mood"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="16dp"
+       android:maxLines="2"
+       android:text="Mood"
+       android:textColor="#ffffff"
+       android:layout_below="@id/my_name"
+       android:layout_alignLeft="@id/my_name"
+       android:layout_marginRight="15dp"
+       android:layout_marginTop="3dp"
+       />     
+  
+ </RelativeLayout>
+ 
+   </LinearLayout>
+
+
+   
+    <TabWidget
+        android:id="@+id/tabWidget1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="right|center_vertical" 
+        android:layout_marginTop="250dp"/>
+
+         <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabWidget1" />
+   
+ 
+ 
+</RelativeLayout>
+

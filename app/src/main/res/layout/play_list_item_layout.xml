@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/play_list_item_name"
+        android:layout_width="wrap_content"
+        android:maxWidth="220dp"
+        android:layout_height="45dp"
+        android:paddingLeft="20dp"
+		android:paddingRight="0dp"
+        android:gravity="center_vertical"
+        android:background="#00000000"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:clickable="true" />
+    
+    <TextView
+        android:id="@+id/play_list_item_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"      
+        android:layout_toRightOf="@id/play_list_item_name"
+        android:gravity="center_vertical"
+        android:background="#00000000"
+        android:textSize="13sp" 
+        android:textColor="#ffffff"
+        />
+    
+    <ImageView
+        android:id="@+id/playing_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/list_icon_playing"
+        android:layout_toRightOf="@id/play_list_item_singer"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"     
+        android:visibility="invisible"     
+        />
+    
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/delete_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        />
+  
+</RelativeLayout>

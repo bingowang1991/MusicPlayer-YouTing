@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:layout_width="fill_parent"
+	 android:layout_height="0dp" 
+	 android:layout_weight="1.2"     
+	 android:orientation="horizontal"   
+	 android:background="@mipmap/mini_music_bg"
+ 	>
+        <android.support.v4.view.ViewPager
+           android:id="@+id/mini_music"
+           android:layout_width="0dp"
+           android:layout_weight="6"
+           android:layout_height="50dp"
+           android:layout_gravity="center_vertical"
+           />
+       
+        <View
+       android:id="@+id/line2_vertical"
+       android:layout_width="2dp"
+       android:layout_height="match_parent"
+       android:background="@mipmap/line_vertical"
+       android:layout_marginTop="3dp"
+       android:layout_marginBottom="3dp"
+       android:layout_marginRight="4dp"
+       >
+       </View>
+       
+      <com.example.myview.RoundProgressBar
+           android:id="@+id/roundProgressBar1"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_marginLeft="4dp"
+           android:layout_gravity="center_vertical"
+          
+       />
+       
+       <Button
+           android:id="@+id/mini_setting"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="40dp"
+           android:background="@mipmap/mini_setting"
+           android:layout_marginRight="7dp"
+           android:layout_gravity="center_vertical"
+           android:layout_marginBottom="2dp"
+           />   
+                             
+</LinearLayout>

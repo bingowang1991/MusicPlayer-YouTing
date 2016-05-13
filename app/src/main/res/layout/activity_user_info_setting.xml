@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:zhy="http://schemas.android.com/apk/res/com.example.testvolley"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_marginLeft="0dip"
+    android:layout_marginRight="0dip"
+    
+    >
+ <LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="250dp"
+     android:orientation="vertical"
+     android:background="@mipmap/user_info_bg"
+     >
+   <RelativeLayout
+        android:id="@+id/userinfosetting_top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" 
+        android:background="@mipmap/main_title_bg" >
+
+        <ImageButton
+            android:id="@+id/my_userinfo_return"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_backround_deep"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/button_back" />
+  
+      <View
+            android:id="@+id/line1_vertical"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/line_vertical"
+            android:layout_toRightOf="@id/my_userinfo_return"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            >
+        </View>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white_translucence"
+           />
+
+    </RelativeLayout>
+    
+      <com.example.myview.CustomImageView
+        android:id="@+id/iv_face"
+        android:layout_width="100dp"
+        android:layout_height="100dp" 
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_centerInParent="true"
+        zhy:src="@drawable/default_face"
+        zhy:type="circle" 
+        zhy:strokeWidth="3dp"/>
+      
+      <Button 
+          android:id="@+id/set_head"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="设置头像"
+          android:textColor="#ffffff"
+          android:layout_gravity="center_horizontal"
+          android:background="@drawable/button_backround_deep"
+          android:layout_marginTop="4dp"
+          android:textSize="18dp"
+          />
+   
+   </LinearLayout>
+    
+   <LinearLayout 
+     android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+       android:layout_marginTop="40dp"
+       >
+     
+       <ImageView 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@mipmap/user_info_name"
+          
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="昵称："
+       android:layout_marginLeft="8dp"
+       android:textSize="18dp"
+       android:layout_gravity="center_vertical"
+       />    
+   
+   <TextView
+       android:id="@+id/user_name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:clickable="true"
+        android:layout_gravity="center_vertical"
+         android:textSize="18dp"
+         android:singleLine="true"
+       />     
+   
+   </LinearLayout>
+
+      <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+             android:background="@mipmap/line_user_info"
+            android:layout_marginTop="10dp"
+            >
+        </View>
+<LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="40dp"
+       android:layout_marginRight="40dp"
+       android:layout_marginTop="30dp"
+       >
+    <ImageView 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@mipmap/user_info_mood"
+     android:layout_gravity="center_vertical"      
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="个性签名："
+       android:layout_marginLeft="8dp"
+       android:textSize="18dp"
+       android:layout_gravity="center_vertical"
+       />    
+   
+   <TextView
+       android:id="@+id/user_signature"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="18dp"
+       android:maxLines="3"
+       />     
+   
+   </LinearLayout>
+   
+  <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+             android:background="@mipmap/line_user_info"
+            android:layout_marginTop="10dp"
+            
+            >
+        </View>        
+
+         <Button
+                android:id="@+id/btn_loginout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="#20B2AA"
+                android:text="注销登录"
+                android:textSize="20dp" 
+                android:textColor="#ffffff"
+                android:layout_marginLeft="70px"
+                android:layout_marginRight="70px"/>
+  
+</LinearLayout>
+

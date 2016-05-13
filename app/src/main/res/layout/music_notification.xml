@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/ll_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/notification_singer_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center_vertical" />
+    
+    <LinearLayout 
+         android:layout_height="100dp"
+         android:layout_width="fill_parent"
+         android:orientation="vertical"
+         android:layout_marginLeft="5dp"
+         android:layout_marginTop="5dp"
+         >
+        
+         <RelativeLayout 
+           android:layout_height="50dp"
+           android:layout_width="fill_parent"
+             >
+              <TextView 
+               android:id="@+id/notification_song_name"            
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="20sp"
+               android:textColor="#ffffff"
+               android:singleLine="true"
+               android:ellipsize= "marquee"
+               />
+           <TextView 
+               android:id="@+id/notification_singer_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="3dp"
+               android:textSize="15sp"
+               android:textColor="#ffffff"
+               android:layout_below="@+id/notification_song_name"
+               android:singleLine="true"
+               android:ellipsize= "marquee"
+               />
+            
+            <Button
+            android:id="@+id/close"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@mipmap/notification_exit"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+             />
+           
+         </RelativeLayout>
+         
+        <LinearLayout 
+            android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+             android:layout_marginTop="15dp"
+            >
+            <ImageView
+            android:id="@+id/play_pause_music"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@mipmap/notification_stop" />
+
+           <ImageView
+            android:id="@+id/next_music"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@mipmap/notification_next" />
+                
+        </LinearLayout>
+              
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:zhy="http://schemas.android.com/apk/res/com.example.testvolley"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="0dip"
+    android:layout_marginRight="0dip"
+    android:background="#FFFFFF">
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical" 
+    android:layout_marginLeft="0dip"
+    android:layout_marginRight="0dip"
+           android:gravity="center"
+    android:background="#20B2AA">
+       <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="音乐分享"
+       android:layout_marginLeft="8dp"
+       android:textSize="20dp"
+       android:textColor="#FFFFFF"
+       android:layout_gravity="center_vertical"
+       />    
+       </LinearLayout>
+ 
+  <LinearLayout 
+       android:id="@+id/ll_sharetoall"
+     android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="8dp"
+       android:layout_marginTop="10dp"
+       >
+     
+       <ImageView 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@mipmap/sharetoall"
+          
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="分享给所有人"
+       android:layout_marginLeft="8dp"
+       android:textSize="18dp"
+       android:layout_gravity="center_vertical"
+       />    
+   </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+             android:background="@mipmap/line_user_info"
+            android:layout_marginTop="10dp"
+            >
+        </View>
+<LinearLayout 
+       android:id="@+id/ll_sharetoone"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="8dp"
+       android:layout_marginTop="10dp"
+       >
+    <ImageView 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@mipmap/sharetoone"
+     android:layout_gravity="center_vertical"      
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="私信分享"
+       android:layout_marginLeft="8dp"
+       android:textSize="18dp"
+       android:layout_gravity="center_vertical"
+       />       
+   </LinearLayout>
+   
+  <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+             android:background="@mipmap/line_user_info"
+            android:layout_marginTop="10dp"
+            
+            >
+        </View>
+</LinearLayout>
+
+

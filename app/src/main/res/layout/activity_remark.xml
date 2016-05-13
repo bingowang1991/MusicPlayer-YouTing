@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+     <RelativeLayout
+        android:id="@+id/rl_title_fs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" 
+        android:background="#20B2AA" >
+
+        <ImageButton
+            android:id="@+id/tv_return"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_backround_deep"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/button_back" />
+  
+      <View
+            android:id="@+id/line1_vertical"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/line_vertical"
+            android:layout_toRightOf="@id/tv_return"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            >
+        </View>
+        <TextView
+            android:id="@+id/play_song_title"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="设置备注"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white_translucence"
+            android:textIsSelectable="false" />
+
+           
+        
+        <TextView
+            android:id="@+id/tv_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:text="完成"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:background="@drawable/button_backround_deep"
+            android:src="@mipmap/btn_share" />
+      
+        <View
+            android:id="@+id/line2_vertical"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/line_vertical"
+            android:layout_toLeftOf="@id/tv_share"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            >
+        </View>
+        
+    </RelativeLayout>
+        
+            <TextView
+            android:id="@+id/tv_beizhu"
+           android:layout_width="fill_parent"
+           android:layout_marginTop="30dp"
+           android:layout_below="@id/rl_title_fs"
+           
+           android:layout_height="30dp"
+           android:layout_margin="8dp"
+           android:gravity="left|top"
+           android:hint="备注名"      
+           android:textSize="20sp"  />
+            
+        <EditText
+        android:id="@+id/name_edit"
+        android:layout_below="@id/tv_beizhu"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:ems="10"/>
+
+</RelativeLayout>
+

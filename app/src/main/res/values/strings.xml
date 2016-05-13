@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">友听</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_my_search">MySearchActivity</string>
+    <string name="title_activity_my_register">MyRegisterActivity</string>
+    <string name="title_activity_user_info_setting">UserInfoSettingActivity</string>
+    <string name="title_activity_my_login">MyLoginActivity</string>
+    <string name="username_hint">输入账号</string>
+    <string name="username_input">账号</string>
+    <string name="password_hint">输入密码</string>
+    <string name="password_input">密码</string>
+    <string name="opt_remember">记住密码</string>
+    <string name="login">登录</string>
+    <string name="zhuce">注册</string>
+    <string name="my_mood">暂无心情</string>
+    <string name="title_activity_my_mood">MyMoodActivity</string>
+    <string name="title_activity_my_message">MyMessageActivity</string>
+    <string name="title_activity_my_friends">MyFriendsActivity</string>
+    <string name="title_activity_my_second_mood">MySecondMoodActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_music_select">MusicSelectActivity</string>
+    <string name="there_is_no_lyric_yet">暂无歌词</string>
+    <!-- wuman -->
+    <!-- <string name="app_name">YouTing</string> -->
+    <string name="text_musicName">歌曲名称</string>
+    <string name="text_myMusic">我的音乐</string>
+    <string name="text_allMusic">全部音乐</string>
+    <string name="text_playingMusic">播放列表</string>
+    <string name="text_footerText">正在播放的音乐</string>
+    <string name="text_deletePlayListMusics">清空列表</string>
+    <string name="text_gequbucunzai">歌曲已经不存在,尝试刷新或检查SD卡</string>
+    <!-- wuman -->
+    <string name="title_activity_friend_info">FriendInfoActivity</string>
+    <string name="title_activity_friend_select">FriendSelectActivity</string>
+    <string name="title_activity_my_share">MyShareActivity</string>
+    <string name="title_activity_remark">RemarkActivity</string>
+
+    <!-- 播放队列界面 -->
+    <string name="playqueue">播放队列</string>
+    <string name="clear">清空</string>
+
+    <!-- 搜索界面 -->
+    <string name="add_friend">添加</string>
+    <string name="send_request">请求已发送</string>
+    <string name="already_add">已添加</string>
+
+    <!-- TimeFormat -->
+    <string name="yesterday">昨天</string>
+    <string name="before_dawn">凌晨</string>
+    <string name="morning">早上</string>
+    <string name="afternoon">下午</string>
+    <string name="night">晚上</string>
+    <string name="monday">周一</string>
+    <string name="tuesday">周二</string>
+    <string name="wednesday">周三</string>
+    <string name="thursday">周四</string>
+    <string name="friday">周五</string>
+    <string name="saturday">周六</string>
+    <string name="sunday">周日</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="second">秒</string>
+    <string name="local_picture_not_found_toast">暂无外部存储，某些本地图片不可预览</string>
+    <string name="title_activity_photo">PhotoActivity</string>
+    <string name="title_activity_test_pic">TestPicActivity</string>
+    <string name="title_activity_image_grid">ImageGridActivity</string>
+
+
+</resources>

@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+        android:id="@+id/rl_title_myfriend"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" 
+        android:background="#20B2AA" >
+
+        <ImageButton
+            android:id="@+id/tv_return_image_grid"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_backround_deep"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/button_back" />
+  
+      <View
+            android:id="@+id/line1_vertical"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/line_vertical"
+            android:layout_toRightOf="@id/tv_return_image_grid"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            >
+        </View>
+        <TextView
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/line1_vertical"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white_translucence"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="相册"      />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"      
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:layout_margin="8dp"
+            android:horizontalSpacing="8dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="8dp" >
+        </GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp" 
+                android:background="#ff495a"
+                />
+
+            <Button
+                android:id="@+id/bt" 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bt_nobgd"
+                android:textColor="#ff495a"
+                android:textSize="20sp"
+                android:text="已选择" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

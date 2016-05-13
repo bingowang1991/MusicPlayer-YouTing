@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.example.testvolley"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+     <com.example.myview.CustomImageView
+                android:id="@+id/friend_photo"
+                android:layout_width="50dp"
+                android:layout_height="50dp" 
+               zhy:src="@drawable/default_face"
+               zhy:type="circle"  />
+
+    <TextView
+        android:id="@+id/friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/friend_photo"
+        android:text="name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+    
+     <ImageButton 
+        android:id="@+id/chat"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"   
+        android:src="@mipmap/actionbar_menu_icn_cmt"
+        android:background="#00ffffff"
+        android:layout_centerVertical="true"
+        />
+     
+     <ImageButton 
+        android:id="@+id/delete"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+      
+        android:src="@mipmap/friend_delete"
+        android:background="#00ffffff"
+        android:layout_centerVertical="true"
+        />
+    
+   
+    
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal" 
+    
+    >
+    <LinearLayout 
+        android:id ="@+id/music_info"
+        android:layout_width="0dip"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:layout_marginLeft="15dip"
+    	android:layout_marginRight="15dip"
+    	android:clickable="true"
+    	android:orientation="vertical">
+      
+        <TextView 
+                android:id = "@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                />
+       <TextView 
+        	
+        	android:id="@+id/artist"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="16dp"
+        	android:ellipsize="end"
+    		android:singleLine="true"
+    		android:textColor="@color/grey"
+    		android:layout_marginTop="3dp"
+        	android:gravity="center_vertical"/>
+       </LinearLayout>
+       <ImageView
+	        android:id="@+id/playing_flag"
+	        android:layout_width="0dip"
+	        android:layout_height="60dp"
+	        android:layout_weight="0.15"
+	        android:src="@mipmap/list_icon_playing"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="2dp"     
+	        android:visibility="invisible"     
+        />
+       <ImageButton 
+        	android:id="@+id/like"
+        	android:layout_width="0dip"
+        	android:layout_height="60dp"
+        	android:layout_weight = "0.2"
+        	android:layout_gravity="center_vertical"
+ 			android:background="#00ffffff"
+       	 	android:scaleType="centerInside"
+       	 	android:layout_marginLeft="3dp"
+       	 	android:src="@mipmap/search_like" />
+      
+      
+    </LinearLayout>
+
+

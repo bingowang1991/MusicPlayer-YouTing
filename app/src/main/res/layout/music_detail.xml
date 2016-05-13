@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.example.testvolley"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+    
+  <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10dp" 
+      >
+      
+      
+      <com.example.myview.CustomImageView
+       android:id="@+id/cover_music" 
+       android:layout_width="wrap_content"   
+       android:layout_height="wrap_content" 
+       android:layout_centerInParent="true"
+       zhy:src="@drawable/music_cover2"
+       zhy:type="circle"  
+       zhy:strokeWidth="3dp"
+       />  
+       
+      <ImageView
+          android:id="@+id/detail_bg"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:background="@mipmap/detail_bg" />
+       
+       <TextView 
+         android:id="@+id/blank"
+         android:layout_width="10dp"
+         android:layout_height="110dp"
+         android:layout_centerInParent="true"
+        
+         />  
+      
+         <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:orientation="horizontal"
+           android:layout_below="@id/blank"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="10dp"
+           
+             >
+             
+             <TextView 
+         android:id="@+id/name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="19dp"
+         android:textStyle="bold"
+         android:layout_gravity="center_vertical"
+         android:textColor="#94784c"
+         android:text="lm："
+         
+         />  
+         
+      <TextView 
+         android:id="@+id/message"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"     
+          android:maxWidth="185dp"
+         android:textColor="#ffffff"
+         android:layout_marginLeft="2dp"
+         android:layout_gravity="center_vertical"
+         android:maxLines="3"
+         android:textSize="17sp"
+         android:text="希望我们的app越做越好，加油！"
+         />  
+           
+             
+             
+         </LinearLayout>
+       
+      
+  </RelativeLayout>
+ 
+     
+  
+</LinearLayout>

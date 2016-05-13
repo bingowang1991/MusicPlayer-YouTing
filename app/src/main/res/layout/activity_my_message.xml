@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  >
+
+    <RelativeLayout
+        android:id="@+id/mymessage_top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" 
+        android:background="#20B2AA" >
+
+        <ImageButton
+            android:id="@+id/iv_return"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_backround_deep"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/button_back" />
+  
+      <View
+            android:id="@+id/line1_vertical"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/line_vertical"
+            android:layout_toRightOf="@id/iv_return"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            >
+        </View>
+       
+      <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:layout_toRightOf="@id/line1_vertical"
+            android:layout_marginLeft="3dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white_translucence"
+             android:layout_centerVertical="true"
+            android:text="消息列表"
+           />
+
+    </RelativeLayout>
+    
+
+    
+    <ListView
+            android:id="@+id/systemListView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:cacheColorHint="#00000000"
+            android:textColor="#ffffff" 
+             android:divider="@mipmap/line_div_hor"
+        android:dividerHeight="1dp"
+        android:drawSelectorOnTop="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"/>
+
+</LinearLayout>
+
+
