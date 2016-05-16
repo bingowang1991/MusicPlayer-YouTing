@@ -52,10 +52,6 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-      
-
-
         <LinearLayout
             android:id="@+id/chat_background"
             android:layout_width="match_parent"
@@ -74,7 +70,6 @@
                 android:listSelector="@android:color/transparent"
                 android:transcriptMode="normal"></ListView>
         </LinearLayout>
-
 
         <LinearLayout
             android:id="@+id/send_msg_layout"
@@ -101,7 +96,6 @@
                     android:layout_marginRight="10dp"
                     android:background="@mipmap/send_music"
                     android:gravity="center" />
-
 
                 <RelativeLayout
                     android:layout_width="0dp"
@@ -150,11 +144,7 @@
                         android:padding="5dp"
                         android:textSize="14sp"
                         android:visibility="invisible" />
-
-                    
                 </FrameLayout>
-
-
 
         </LinearLayout>
         </LinearLayout>

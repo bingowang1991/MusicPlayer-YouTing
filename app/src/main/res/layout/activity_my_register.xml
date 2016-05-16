@@ -144,7 +144,6 @@
 	    android:id="@+id/Confirm_input"
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
-	    android:password="true"
 	    android:hint="确认密码"
 	    android:layout_toRightOf="@id/key2"
 	    android:layout_centerVertical="true"

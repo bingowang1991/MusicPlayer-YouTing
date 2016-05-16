@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="${relativePackage}.${activityClass}" >
+    android:orientation="vertical">
 
  <RelativeLayout
         android:id="@+id/mysearch_top"
@@ -50,9 +49,7 @@
 
 
     </RelativeLayout>
-    
 
-    
     <TabHost
 	android:id="@android:id/tabhost"
 	android:layout_width="match_parent"
@@ -99,7 +96,5 @@
 		</FrameLayout>
 	</LinearLayout>
 </TabHost>
-    
-
 </LinearLayout>
 

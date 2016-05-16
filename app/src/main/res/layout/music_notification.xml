@@ -9,8 +9,7 @@
         android:id="@+id/notification_singer_pic"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@mipmap/ic_launcher"
-        android:layout_gravity="center_vertical" />
+        android:src="@mipmap/ic_launcher" />
     
     <LinearLayout 
          android:layout_height="100dp"

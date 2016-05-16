@@ -72,9 +72,7 @@
             >
         </View>   
     </RelativeLayout>
-    
 
-    
    <EditText
            android:id="@+id/mood_edit"
            android:layout_marginTop="20dp"

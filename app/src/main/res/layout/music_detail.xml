@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:zhy="http://schemas.android.com/apk/res/com.example.testvolley"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" 
@@ -19,7 +19,7 @@
        android:layout_width="wrap_content"   
        android:layout_height="wrap_content" 
        android:layout_centerInParent="true"
-       zhy:src="@drawable/music_cover2"
+       zhy:src="@mipmap/music_cover2"
        zhy:type="circle"  
        zhy:strokeWidth="3dp"
        />  
@@ -72,15 +72,7 @@
          android:maxLines="3"
          android:textSize="17sp"
          android:text="希望我们的app越做越好，加油！"
-         />  
-           
-             
-             
+         />
          </LinearLayout>
-       
-      
   </RelativeLayout>
- 
-     
-  
 </LinearLayout>

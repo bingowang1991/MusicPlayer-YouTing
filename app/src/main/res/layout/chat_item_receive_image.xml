@@ -45,7 +45,7 @@
             android:layout_below="@id/display_name_tv"
             android:layout_marginLeft="3dp"
             android:layout_toRightOf="@id/avatar_iv"
-            android:background="@drawable/receive_msg"
+            android:background="@mipmap/receive_msg"
             android:maxWidth="250.0dip" >
 
 
@@ -55,12 +55,12 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:scaleType="fitXY"
-                android:src="@drawable/fetch_failed"/>
+                android:src="@mipmap/fetch_failed"/>
 			<ImageView
 			    android:layout_width ="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:id = "@+id/play_pause"
-			    android:src="@drawable/mini_play"
+			    android:src="@mipmap/mini_play"
 			    android:background="#00000000"
 			    android:layout_marginLeft="30dp"
 			    android:layout_marginTop="30dp"

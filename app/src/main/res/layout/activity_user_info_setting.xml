@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:zhy="http://schemas.android.com/apk/res/com.example.testvolley"
+xmlns:zhy="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
@@ -63,7 +63,7 @@ xmlns:zhy="http://schemas.android.com/apk/res/com.example.testvolley"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
         android:layout_centerInParent="true"
-        zhy:src="@drawable/default_face"
+        zhy:src="@mipmap/default_face"
         zhy:type="circle" 
         zhy:strokeWidth="3dp"/>
       

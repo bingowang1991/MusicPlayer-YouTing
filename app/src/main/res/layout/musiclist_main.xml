@@ -59,12 +59,7 @@
 	           android:layout_marginLeft="4dp"
 	           android:layout_marginRight="6dp"
 	           android:layout_gravity="center_vertical"/>
-	       
-
-	                             
 		</LinearLayout>
-
-
 
 <!--         <LinearLayout
             android:id="@+id/footer"

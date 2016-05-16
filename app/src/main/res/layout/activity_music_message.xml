@@ -1,10 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-       
    <RelativeLayout
         android:id="@+id/musicmessage_top"
         android:layout_width="match_parent"
@@ -49,14 +47,14 @@
     
 
     <ListView
-            android:id="@+id/musicListView"
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:layout_marginBottom="30dp"
-            android:layout_marginTop="0dp"
-            android:cacheColorHint="#00000000"
-            android:textColor="#ffffff" 
-             android:divider="@mipmap/line_div_hor"
+        android:id="@+id/musicListView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="0dp"
+        android:cacheColorHint="#00000000"
+        android:textColor="#ffffff"
+        android:divider="@mipmap/line_div_hor"
         android:dividerHeight="1dp"
         android:drawSelectorOnTop="false"
         android:footerDividersEnabled="false"
